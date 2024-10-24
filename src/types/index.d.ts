@@ -2,20 +2,21 @@ export namespace AppTypes{
      export type Role = "student" | "assistant" | "faculty";
      export type Categories = "academic" | "volunteer" | "mentalPhysical";
      export type Point = 3 | 7 | 10 | 20;
+     export type Status = 'private' | 'public';
      export interface Post{
           id: string
           name: string
           desc: string
-          status: boolean
+          status: Status
           startTime: string
           startDate: string
           endTime: string
           endDate: string
           point: number
-          lcation: string
+          location: string
           numberParticipant: number
           faculty: string
-          category: string
+          category: Categories
           stdJoin?: string[]
           testId?: string
      }

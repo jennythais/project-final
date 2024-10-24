@@ -1,10 +1,9 @@
-import Image from "next/image";
-import HomePage from "./pages/Homepage";
-import AuthPage from "./pages/Auth";
+import Navbar from '@/components/Navbar'
 
-export default function Home() {
-  return (
-    // <HomePage />
-    <AuthPage />
-  );
+const Home = () => {
+     return (
+         <h1></h1>
+     )
 }
+
+export default Home
